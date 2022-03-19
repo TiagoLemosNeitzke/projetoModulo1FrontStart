@@ -141,11 +141,41 @@ nav ul li a {
     border:1px dotted var(--green);
 }
 
+.services {
+    text-align: center;
+    margin: 90px 0;
+    padding: 0 100px;
+}
 
+.service-container{
+    display: flex;
+    margin: 60px auto 0;
+    justify-content: space-between;
+    max-width: 1200px;
+}
 
+.services .service-container .service-card{
+    max-width: 360px;
+    background: #2f3034;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
+.services .service-container .service-card img{
+    margin: 20px 0 40px;
+    width: 90px;
+    height: 90px;
+}
 
-
+.service-card + .service-card {
+    margin-left: 10px;
+}
 
 /* RESPONSIVIDADE */
 /* TABLET */
