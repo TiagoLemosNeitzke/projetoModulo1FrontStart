@@ -32,7 +32,7 @@ h2 {
     font-size: 24px;
 }
 
-p{
+p {
     color: var(--light-grey);
 }
 
@@ -46,7 +46,7 @@ button {
     font-size: 18px;
 }
 
-header{
+header {
     height: calc(100vh - 65px);
     display: flex;
     align-items: center;
@@ -66,11 +66,11 @@ header .container h1 {
     margin-top: 40px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
     height: var(--menuheight);
     background: var(--bg-dark);
     padding: 0 100px;
@@ -78,24 +78,111 @@ nav{
     top: 0;
 }
 
-nav img{
+nav img {
     height: 45px;
 }
 
 nav ul {
+    width: 100%;
     display: flex;
     list-style: none;
+    justify-content: space-between;
 }
 
-nav ul li a{
-   display: flex;
-   justify-content: space-between;
-   font-size: 24px;
-   color: var(--green);
-   text-decoration: none;
-   margin: 0 35px;
+nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: var(--green);
+    text-decoration: none;
 }
 
-section{
+section {
     height: 1500px;
+}
+
+/* RESPONSIVIDADE */
+/* TABLET */
+@media (max-width: 960px) {
+    header .container {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    header {
+        height: calc(100vh - 10em);
+    }
+
+    nav {
+        padding: 5px;
+        height: 2em;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+        font-size: 0.6em;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    nav img {
+        display: none;
+    }
+
+}
+
+/* SAMARTPHONE */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: .8em;
+    }
+
+    header {
+        height: calc(100vh - 2em);
+    }
+
+    nav {
+        padding: 2px;
+        height: 2em;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+        font-size: 0.4em;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    nav img {
+        display: none;
+    }
 }
