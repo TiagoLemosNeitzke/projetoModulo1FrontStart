@@ -124,12 +124,13 @@ nav ul li a {
 .about-me .img-container img{
     width: 70%; 
     height: 60vh; 
+    object-fit: cover;
 }
 
 .about-me .img-container .line{
     width: calc(70% + 50px);
     height: calc(100% + 50px);
-    border: 1px solid var(--purple);
+    border: 1px dotted var(--purple);
     position: absolute;
     top: -25px;
     left: calc(50% - 70% / 2 - 25px);
@@ -158,6 +159,10 @@ nav ul li a {
         height: calc(100vh - 10em);
     }
 
+    header .container{
+        padding: 50px;
+    }
+
     nav {
         height: 2em;
     }
@@ -179,6 +184,19 @@ nav ul li a {
 
     nav img {
         display: none;
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+
+    .about-me .img-container {
+        padding-right: 0;
+        margin: 70px 0;
     }
 
 }
@@ -203,7 +221,7 @@ nav ul li a {
     }
 
     header {
-        height: calc(100vh - 2em);
+        height: 40vh;
     }
 
     nav {
@@ -227,6 +245,14 @@ nav ul li a {
     }
 
     nav img {
+        display: none;
+    }
+
+    .about-me{
+        padding: 0 40px;
+    }
+
+    .about-me .img-container {
         display: none;
     }
 }
