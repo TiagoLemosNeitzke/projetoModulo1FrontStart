@@ -5,7 +5,7 @@
     --green: #15cdcb;
     --bg-dark: #212226;
     --light-grey: #e0dede;
-
+    --medium-grey: #2f3034;
     --menuheight: 65px;
 }
 
@@ -44,6 +44,21 @@ button {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+}
+
+.btn-secundary {
+    background: var(--medium-grey);
+    border: 1px solid var(--purple);
+    color: var(--green);
+    font-weight: bold;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.btn-secundary img {
+    margin-right: 15px;
 }
 
 .title-purple {
@@ -246,6 +261,32 @@ nav ul li a {
     left: calc(50% - 70% / 2 - 50px);
 }
 
+.curriculum{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container{
+    display: flex;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.curriculum .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.curriculum .container  .curriculum-info {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
 
 /* RESPONSIVIDADE */
 /* TABLET */
@@ -305,7 +346,7 @@ nav ul li a {
         align-items: center;
     }
 
-    .service-card+.service-card, .portifolio-card+.portifolio-card {
+    .service-card+.service-card, .portifolio-card + .portifolio-card {
         margin-left: 0;
         margin-top: 15px;
     }
