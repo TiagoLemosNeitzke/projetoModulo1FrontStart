@@ -1,5 +1,5 @@
 
-# Projeto portifólio Isadora # Stangarlin
+# Projeto portifólio Isadora Stangarlin
 
 Olá! Este projeto foi criado durante o curso **FrontStart**. Durante sua criação pude aprimorar meus conhecimentos em HTML e CSS.
 Este projeto é uma cópia do projeto do módulo 1. Não criei nada, apenas copiei e fiz algumas alterações mínimas no CSS e responsividade, que achei pertinentes.
