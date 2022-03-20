@@ -84,6 +84,7 @@ nav {
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 nav img {
@@ -112,11 +113,11 @@ nav ul li a {
 
 .about-me .container{
     width: 50%;
+    padding-right: 50px;
 }
 
 .about-me .img-container{
     width: 50%;
-    padding-right: 50px;
     text-align: center;
     position: relative;
 }
@@ -186,7 +187,7 @@ nav ul li a {
     }
 
     header {
-        height: calc(100vh - 10em);
+        height: calc(100vh - 6em);
     }
 
     header .container{
@@ -207,7 +208,7 @@ nav ul li a {
 
     nav ul li a {
         margin-left: 0;
-        font-size: 0.6em;
+        font-size: 1em;
         letter-spacing: 1px;
         font-weight: bold;
     }
@@ -227,6 +228,17 @@ nav ul li a {
     .about-me .img-container {
         padding-right: 0;
         margin: 70px 0;
+    }
+
+    .services .service-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card + .service-card {
+        margin-left: 0;
+        margin-top: 15px;
     }
 
 }
@@ -285,4 +297,5 @@ nav ul li a {
     .about-me .img-container {
         display: none;
     }
+
 }
