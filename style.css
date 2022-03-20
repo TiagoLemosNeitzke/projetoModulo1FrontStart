@@ -46,11 +46,11 @@ button {
     font-size: 18px;
 }
 
-.title-purple{
+.title-purple {
     color: var(--purple);
 }
 
-.title-green{
+.title-green {
     color: var(--green);
 }
 
@@ -106,29 +106,29 @@ nav ul li a {
     text-decoration: none;
 }
 
-.about-me{
+.about-me {
     display: flex;
     padding: 100px;
 }
 
-.about-me .container{
+.about-me .container {
     width: 50%;
     padding-right: 50px;
 }
 
-.about-me .img-container{
+.about-me .img-container {
     width: 50%;
     text-align: center;
     position: relative;
 }
 
-.about-me .img-container img{
-    width: 70%; 
-    height: 60vh; 
+.about-me .img-container img {
+    width: 70%;
+    height: 60vh;
     object-fit: cover;
 }
 
-.about-me .img-container .line{
+.about-me .img-container .line {
     width: calc(70% + 50px);
     height: calc(100% + 50px);
     border: 1px dotted var(--purple);
@@ -137,9 +137,9 @@ nav ul li a {
     left: calc(50% - 70% / 2 - 25px);
 }
 
-.about-me .img-container .line.green{
+.about-me .img-container .line.green {
     transform: rotate(-3.3deg);
-    border:1px dotted var(--green);
+    border: 1px dotted var(--green);
 }
 
 .services {
@@ -148,14 +148,14 @@ nav ul li a {
     padding: 0 100px;
 }
 
-.service-container{
+.service-container, .portifolio-container {
     display: flex;
     margin: 60px auto 0;
     justify-content: space-between;
     max-width: 1200px;
 }
 
-.services .service-container .service-card{
+.services .service-container .service-card {
     max-width: 360px;
     background: #2f3034;
     border: 1px solid var(--purple);
@@ -168,15 +168,84 @@ nav ul li a {
     text-align: center;
 }
 
-.services .service-container .service-card img{
+.services .service-container .service-card img {
     margin: 20px 0 40px;
     width: 90px;
     height: 90px;
 }
 
-.service-card + .service-card {
+.service-card+.service-card {
     margin-left: 10px;
 }
+
+.portifolio {
+    margin: 90px 0;
+
+    text-align: center;
+    background: url(assets/bg.png) center;
+    margin-bottom: 100px;
+}
+
+.portifolio .portifolio-container {
+    margin-top: 100px;
+}
+
+.portifolio .portifolio-container .portifolio-card {
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(42px);
+    border-radius: 16px;
+    max-width: 360px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.portifolio-card+.portifolio-card {
+    margin-left: 10px;
+}
+
+.portifolio .portifolio-container .portifolio-card .img-container {
+    margin: 0 25px 50px;
+    position: relative;
+}
+
+.portifolio .portifolio-container .portifolio-card .img-container img {
+    width: 100%;
+}
+
+.portifolio .portifolio-container .portifolio-card .language ul {
+    display: flex;
+    list-style: none;
+}
+
+.portifolio .portifolio-container .portifolio-card .language ul li+li {
+    margin-left: 10px;
+}
+
+.portifolio .portifolio-container .portifolio-card .language ul li {
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 16px;
+    padding: 3px 15px;
+}
+
+.portifolio .portifolio-container .portifolio-card p {
+    margin: 0;
+    text-align: left;
+}
+
+.portifolio .img-container .line {
+    position: absolute;
+    width: 280px;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    transform: rotate(-1.93deg);
+    height: calc(100% + 50px);
+    top: -25px;
+    left: calc(50% - 70% / 2 - 50px);
+}
+
 
 /* RESPONSIVIDADE */
 /* TABLET */
@@ -190,7 +259,7 @@ nav ul li a {
         height: calc(100vh - 6em);
     }
 
-    header .container{
+    header .container {
         padding: 50px;
     }
 
@@ -217,11 +286,11 @@ nav ul li a {
         display: none;
     }
 
-    .about-me{
+    .about-me {
         flex-direction: column;
     }
 
-    .about-me .container, .about-me .img-container{
+    .about-me .container, .about-me .img-container {
         width: 100%;
     }
 
@@ -230,13 +299,13 @@ nav ul li a {
         margin: 70px 0;
     }
 
-    .services .service-container{
+    .services .service-container, .portifolio-container {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
 
-    .service-card + .service-card {
+    .service-card+.service-card, .portifolio-card+.portifolio-card {
         margin-left: 0;
         margin-top: 15px;
     }
@@ -290,12 +359,16 @@ nav ul li a {
         display: none;
     }
 
-    .about-me{
+    .about-me {
         padding: 0 40px;
     }
 
     .about-me .img-container {
         display: none;
+    }
+
+    .services .service-container .service-card, .portifolio .portifolio-container .portifolio-card {
+        padding: 0;
     }
 
 }
